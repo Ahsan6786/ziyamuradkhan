@@ -35,7 +35,6 @@ export function Hero() {
           width={300}
           height={300}
           className="rounded-full object-cover shadow-2xl border-8 border-card"
-          priority
         />
       </div>
     </section>
