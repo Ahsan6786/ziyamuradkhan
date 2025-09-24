@@ -1,12 +1,7 @@
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 
 export function Hero() {
-  const profileImage = PlaceHolderImages.find(
-    (img) => img.id === 'ziya-khan-profile'
-  );
-
   return (
     <section
       id="hero"
@@ -34,17 +29,14 @@ export function Hero() {
         </div>
       </div>
       <div className="md:w-1/3 flex justify-center">
-        {profileImage && (
-          <Image
-            src={profileImage.imageUrl}
-            alt={profileImage.description}
-            data-ai-hint={profileImage.imageHint}
-            width={300}
-            height={300}
-            className="rounded-full object-cover shadow-2xl border-8 border-card"
-            priority
-          />
-        )}
+        <Image
+          src="/ziya.png"
+          alt="Ziya Murad Khan"
+          width={300}
+          height={300}
+          className="rounded-full object-cover shadow-2xl border-8 border-card"
+          priority
+        />
       </div>
     </section>
   );
