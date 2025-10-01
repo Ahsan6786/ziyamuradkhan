@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
+import Link from 'next/link';
 
 export function Hero() {
   return (
@@ -29,28 +30,15 @@ export function Hero() {
             <p className="text-lg uppercase tracking-widest text-primary font-semibold mb-2">
               Ziya Murad Khan
             </p>
-            <h1 className="text-4xl md:text-6xl font-headline font-bold mb-4">
+            <h1 className="text-4xl md:text-6xl font-headline font-bold mb-8">
               Driving Growth in Banking & Telecom
             </h1>
-            <p className="text-lg md:text-xl text-foreground/80 leading-relaxed max-w-3xl mx-auto md:mx-0 mb-8">
-              A seasoned executive with over 15 years of experience steering
-              digital transformation, P&L management, and strategic growth.
-            </p>
             <div className="flex gap-4 justify-center md:justify-start">
-              <a href="#contact">
+              <Link href="#contact">
                 <Button size="lg" className="font-bold text-lg px-8 py-6">
                   Get in Touch
                 </Button>
-              </a>
-              <a href="#experience">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="font-bold text-lg px-8 py-6 border-2"
-                >
-                  View Experience
-                </Button>
-              </a>
+              </Link>
             </div>
           </div>
 
