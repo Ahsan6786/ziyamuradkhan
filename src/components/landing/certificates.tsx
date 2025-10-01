@@ -9,11 +9,11 @@ import {
 import { Card, CardContent } from '@/components/ui/card';
 
 const certificateImages = [
-  '/certificate1.png',
-  '/certificate2.png',
-  '/certificate3.png',
-  '/certificate4.png',
-  '/certificate5.png',
+  '/certificate1.jpg',
+  '/certificate2.jpg',
+  '/certificate3.jpg',
+  '/certificate4.jpg',
+  '/certificate5.jpg',
 ];
 
 export function Certificates() {
