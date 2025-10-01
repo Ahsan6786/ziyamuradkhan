@@ -26,15 +26,6 @@ export function Hero() {
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-between h-full">
           {/* Text content - takes full width on mobile, half on desktop */}
           <div className="w-full md:w-1/2 text-center md:text-left pt-20 md:pt-0">
-             <div className="mb-8 md:hidden">
-              <Image
-                src="/image1.png"
-                alt="Ziya Murad Khan"
-                width={180}
-                height={180}
-                className="rounded-full object-cover shadow-2xl border-4 border-primary/50 mx-auto"
-              />
-            </div>
             <p className="text-lg uppercase tracking-widest text-primary font-semibold mb-2">
               Ziya Murad Khan
             </p>
