@@ -10,7 +10,7 @@ export function Hero() {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://picsum.photos/seed/1/1920/1080"
+          src="/image1.png"
           alt="Background"
           fill
           className="object-cover"
