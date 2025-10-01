@@ -5,6 +5,7 @@ import { Experience } from '@/components/landing/experience';
 import { Skills } from '@/components/landing/skills';
 import { Contact } from '@/components/landing/contact';
 import { Certificates } from '@/components/landing/certificates';
+import { Testimonials } from '@/components/landing/testimonials';
 import {
   Linkedin,
   Instagram,
@@ -28,6 +29,7 @@ function Header() {
     { name: 'Skills', href: '#skills' },
     { name: 'Certificates', href: '#certificates' },
     { name: 'Achievements', href: '#achievements' },
+    { name: 'Testimonials', href: '#testimonials' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -142,6 +144,7 @@ export default function Home() {
           <Experience />
           <Skills />
           <Certificates />
+          <Testimonials />
           <Contact />
         </div>
       </main>
