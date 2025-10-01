@@ -8,33 +8,52 @@ import { Building, CalendarDays } from 'lucide-react';
 
 const experiences = [
   {
-    role: 'Chief Digital Officer',
-    company: 'Global Telecom Inc.',
-    period: '2018 - Present',
+    role: 'Senior Manager',
+    company: 'RBL Bank',
+    period: 'Sep 2023 - Present',
     details: [
-      'Led digital transformation initiatives, increasing digital sales by 40%.',
-      'Managed a $50M P&L for the digital products division.',
-      'Launched a new 5G-enabled IoT service line, capturing 15% market share in the first year.',
+      'Managed customer relationships and provided private banking services.',
     ],
   },
   {
-    role: 'Head of Retail Banking',
-    company: 'NextGen Bank',
-    period: '2014 - 2018',
+    role: 'Manager of Sales',
+    company: 'IndusInd Bank',
+    period: 'Oct 2021 - Aug 2023',
     details: [
-      'Oversaw 200+ retail branches and digital banking operations.',
-      'Improved customer satisfaction scores by 20% through CX enhancements.',
-      'Grew the retail loan portfolio by 30% while maintaining risk compliance.',
+      'Managed salary accounts and cross-selling via long-term engagement with HR/Admin/Finance heads.',
+      'Collaborated with channel partners for product upsell including loans, insurance, and forex.',
+      'Achieved multiple awards for service and client success.',
     ],
   },
   {
-    role: 'Senior Product Manager',
-    company: 'Innovate Finance Solutions',
-    period: '2010 - 2014',
+    role: 'Cluster Manager',
+    company: 'Spectra',
+    period: 'Oct 2019 - Sep 2021',
     details: [
-      'Developed and launched a market-leading mobile payment application.',
-      'Managed the product lifecycle from conception to launch and iteration.',
-      'Collaborated with engineering, marketing, and sales teams to ensure product success.',
+      'Led B2B sales in Managed WiFi, ILL, SD-WAN with a team of 8 sales associates.',
+      'Handled top clients including Jamia Hamdard, Hindustan Power, and Jagran Prakashan.',
+      'Delivered full-cycle telecom solutions to large enterprise clients.',
+    ],
+  },
+  {
+    role: 'National Key Account Manager',
+    company: 'Matrix Cellular (International) Services Ltd.',
+    period: 'Mar 2019 - Oct 2019',
+    details: [
+      'Managed SIM, Forex, and Travel Insurance sales via SME Channel.',
+      'Top performer in August 2019 with 166% of target achieved.',
+      'Handled accounts including PepsiCo, Ernst & Young, GE, and SBI.',
+    ],
+  },
+  {
+    role: 'Channel Manager (SME)',
+    company: 'Reliance Communications',
+    period: 'Nov 2009 - Mar 2017',
+    details: [
+      'Managed 35–40 sales associates and channel partners in the SME vertical.',
+      'Oversaw wireless data, broadband, and postpaid mobility solutions.',
+      'Conducted demos and activations for IBM, Wipro, Microsoft, and Perfetti.',
+      'Promoted 3 times and awarded for leadership & performance.',
     ],
   },
 ];
