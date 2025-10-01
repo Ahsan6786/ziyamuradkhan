@@ -14,14 +14,6 @@ import Autoplay from 'embla-carousel-autoplay';
 
 const testimonials = [
   {
-    name: 'Arbab Omar Khan',
-    title: 'Technical Section Lead-Ultraviolette Automotive',
-    relation: 'May 31, 2020, Arbab Omar was ZM’s client',
-    testimonial:
-      'Mr. Khan is one of the true professional sales personal. Very efficient in building client relations, always eager to resolve and address queries.',
-    avatar: 'https://picsum.photos/seed/arbab/100/100',
-  },
-  {
     name: 'Asad K.',
     title:
       'Head of Solution Consulting & Delivery Ops | Helping enterprise teams achieve mobility with AI + No‑Code | Driving faster time‑to‑value and lower TCO.',
@@ -29,6 +21,14 @@ const testimonials = [
     testimonial:
       'Ziya is a tenacious person who dares to speak his opinions and ensures that he adds value to any team he is a part of. He has the drive to perform at the highest levels regardless of what the circumstances are. He looks to be the best at everything he does and never settles for anything less. I would highly recommend Ziya if you are looking for someone who will be diligent at his code of conduct and add value to your team through relentless effort to perform great.',
     avatar: 'https://picsum.photos/seed/asad/100/100',
+  },
+  {
+    name: 'Arbab Omar Khan',
+    title: 'Technical Section Lead-Ultraviolette Automotive',
+    relation: 'May 31, 2020, Arbab Omar was ZM’s client',
+    testimonial:
+      'Mr. Khan is one of the true professional sales personal. Very efficient in building client relations, always eager to resolve and address queries.',
+    avatar: 'https://picsum.photos/seed/arbab/100/100',
   },
 ];
 
