@@ -34,7 +34,7 @@ function Header() {
   const socialLinks = [
     {
       icon: <Linkedin className="w-5 h-5" />,
-      href: 'https://www.linkedin.com',
+      href: 'https://www.linkedin.com/in/ziyamkhan/',
     },
     { icon: <Github className="w-5 h-5" />, href: 'https://github.com' },
     { icon: <Twitter className="w-5 h-5" />, href: 'https://twitter.com' },
