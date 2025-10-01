@@ -17,6 +17,8 @@ import {
   SheetContent,
   SheetTrigger,
   SheetClose,
+  SheetHeader,
+  SheetTitle,
 } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 
@@ -80,6 +82,9 @@ function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] bg-background">
+              <SheetHeader>
+                <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+              </SheetHeader>
               <div className="flex flex-col h-full">
                 <nav className="flex flex-col gap-6 text-lg font-medium mt-16">
                   {navLinks.map((link) => (
