@@ -12,7 +12,7 @@ export function Hero() {
       {/* Background for mobile */}
       <div className="absolute inset-0 z-0 md:hidden">
         <Image
-          src="/ziya.png"
+          src="/image1.png"
           alt="Background"
           fill
           className="object-cover"
@@ -28,7 +28,7 @@ export function Hero() {
           <div className="w-full md:w-1/2 text-center md:text-left pt-20 md:pt-0">
              <div className="mb-8 md:hidden">
               <Image
-                src="/ziya.png"
+                src="/image1.png"
                 alt="Ziya Murad Khan"
                 width={180}
                 height={180}
@@ -67,7 +67,7 @@ export function Hero() {
           <div className="hidden md:flex md:w-1/2 justify-center items-center h-full">
             <div className="relative w-full h-full">
               <Image
-                src="/ziya.png"
+                src="/image1.png"
                 alt="Ziya Murad Khan"
                 fill
                 className="object-contain"
