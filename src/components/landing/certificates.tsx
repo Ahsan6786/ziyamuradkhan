@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 import {
   Carousel,
@@ -7,6 +9,10 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
+import { useEffect, useState } from 'react';
+import type { CarouselApi } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
+
 
 const certificateImages = [
   '/certificate1.jpg',
@@ -17,6 +23,7 @@ const certificateImages = [
 ];
 
 export function Certificates() {
+
   return (
     <section id="certificates" className="space-y-12">
       <div className="text-center space-y-3">
@@ -32,6 +39,11 @@ export function Certificates() {
           align: 'start',
           loop: true,
         }}
+        plugins={[
+          Autoplay({
+            delay: 3000,
+          }),
+        ]}
         className="w-full max-w-6xl mx-auto"
       >
         <CarouselContent>
@@ -53,8 +65,8 @@ export function Certificates() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden sm:flex" />
-        <CarouselNext className="hidden sm:flex" />
+        <CarouselPrevious />
+        <CarouselNext />
       </Carousel>
     </section>
   );
