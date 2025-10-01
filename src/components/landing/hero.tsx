@@ -31,15 +31,11 @@ export function Hero() {
             data-ai-hint="professional portrait"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-l from-black/30 to-transparent"></div>
         </div>
       </div>
 
-      {/* Gradient Overlay */}
-      <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background to-transparent z-10"></div>
-
       {/* Text Content */}
-      <div className="relative z-20 container mx-auto px-4 h-full flex items-center pt-48 md:pt-0">
+      <div className="relative z-10 container mx-auto px-4 h-full flex items-center pt-48 md:pt-0">
         <div className="w-full md:w-1/2 text-center md:text-left">
           <p className="text-xl md:text-2xl uppercase tracking-widest text-primary font-semibold mb-3">
             Ziya Murad Khan
