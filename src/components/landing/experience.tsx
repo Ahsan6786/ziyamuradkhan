@@ -60,7 +60,11 @@ const experiences = [
 
 export function Experience() {
   return (
-    <section id="experience" className="space-y-8 animate-in" style={{ animationDelay: '200ms' }}>
+    <section
+      id="experience"
+      className="space-y-8 animate-in"
+      style={{ animationDelay: '200ms' }}
+    >
       <div className="text-center space-y-2">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary">
           Professional Experience

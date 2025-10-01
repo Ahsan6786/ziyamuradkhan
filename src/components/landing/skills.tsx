@@ -4,15 +4,41 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { CheckCircle, Zap, TrendingUp, Users, Handshake, Briefcase, Award } from 'lucide-react';
+import {
+  CheckCircle,
+  Zap,
+  TrendingUp,
+  Users,
+  Handshake,
+  Briefcase,
+  Award,
+} from 'lucide-react';
 
 const technicalSkills = [
-  { name: 'Corporate Sales & B2B', icon: <Briefcase className="w-5 h-5 text-primary" /> },
-  { name: 'Team Leadership & Management', icon: <Users className="w-5 h-5 text-primary" /> },
-  { name: 'Strategic Account Management', icon: <Handshake className="w-5 h-5 text-primary" /> },
-  { name: 'Channel Partner Development', icon: <Zap className="w-5 h-5 text-primary" /> },
-  { name: 'Business Development', icon: <TrendingUp className="w-5 h-5 text-primary" /> },
-  { name: 'Sales Forecasting & Strategy', icon: <Award className="w-5 h-5 text-primary" /> },
+  {
+    name: 'Corporate Sales & B2B',
+    icon: <Briefcase className="w-5 h-5 text-primary" />,
+  },
+  {
+    name: 'Team Leadership & Management',
+    icon: <Users className="w-5 h-5 text-primary" />,
+  },
+  {
+    name: 'Strategic Account Management',
+    icon: <Handshake className="w-5 h-5 text-primary" />,
+  },
+  {
+    name: 'Channel Partner Development',
+    icon: <Zap className="w-5 h-5 text-primary" />,
+  },
+  {
+    name: 'Business Development',
+    icon: <TrendingUp className="w-5 h-5 text-primary" />,
+  },
+  {
+    name: 'Sales Forecasting & Strategy',
+    icon: <Award className="w-5 h-5 text-primary" />,
+  },
 ];
 
 const softSkills = [
@@ -26,7 +52,11 @@ const softSkills = [
 
 export function Skills() {
   return (
-    <section id="skills" className="space-y-12 animate-in" style={{ animationDelay: '400ms' }}>
+    <section
+      id="skills"
+      className="space-y-12 animate-in"
+      style={{ animationDelay: '400ms' }}
+    >
       <div className="text-center space-y-3">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary tracking-tight">
           Skills & Expertise
@@ -46,7 +76,7 @@ export function Skills() {
           <CardContent className="space-y-4">
             {technicalSkills.map((skill) => (
               <div key={skill.name} className="flex items-center gap-4">
-                 <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
                   {skill.icon}
                 </div>
                 <p className="font-medium text-foreground/90">{skill.name}</p>
