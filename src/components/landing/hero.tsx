@@ -10,7 +10,7 @@ export function Hero() {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src="/image1.png"
+          src="/ziya.png"
           alt="Background"
           fill
           className="object-cover"
