@@ -4,13 +4,12 @@ import { Competencies } from '@/components/landing/competencies';
 import { Experience } from '@/components/landing/experience';
 import { Skills } from '@/components/landing/skills';
 import { Contact } from '@/components/landing/contact';
-import { Separator } from '@/components/ui/separator';
+import { Certificates } from '@/components/landing/certificates';
 import {
   Linkedin,
   Instagram,
   Github,
   Twitter,
-  Briefcase,
   Menu,
 } from 'lucide-react';
 import Link from 'next/link';
@@ -27,6 +26,7 @@ function Header() {
     { name: 'About', href: '#hero' },
     { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Certificates', href: '#certificates' },
     { name: 'Achievements', href: '#achievements' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -141,6 +141,7 @@ export default function Home() {
           <Competencies />
           <Experience />
           <Skills />
+          <Certificates />
           <Contact />
         </div>
       </main>
