@@ -70,7 +70,7 @@ export function Hero() {
                 src="/image1.png"
                 alt="Ziya Murad Khan"
                 fill
-                className="object-contain"
+                className="object-cover"
               />
             </div>
           </div>
