@@ -25,7 +25,7 @@ export function Hero() {
       <div className="relative z-10 container mx-auto px-4 h-full">
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-between h-full">
           {/* Text content - takes full width on mobile, half on desktop */}
-          <div className="w-full md:w-1/2 text-center md:text-left pt-20 md:pt-0">
+          <div className="w-full md:w-1/2 text-center md:text-left pt-32 md:pt-0">
             <p className="text-lg uppercase tracking-widest text-primary font-semibold mb-2">
               Ziya Murad Khan
             </p>
