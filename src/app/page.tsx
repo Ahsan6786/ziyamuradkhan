@@ -8,7 +8,6 @@ import { Testimonials } from '@/components/landing/testimonials';
 import {
   Linkedin,
   Instagram,
-  Github,
   Twitter,
   Menu,
 } from 'lucide-react';
@@ -34,9 +33,8 @@ function Header() {
   const socialLinks = [
     {
       icon: <Linkedin className="w-5 h-5" />,
-      href: 'https://www.linkedin.com/in/ziyamkhan/',
+      href: 'https://www.linkedin.com/in/ziyamkhan/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
     },
-    { icon: <Github className="w-5 h-5" />, href: 'https://github.com' },
     { icon: <Twitter className="w-5 h-5" />, href: 'https://twitter.com' },
     { icon: <Instagram className="w-5 h-5" />, href: 'https://instagram.com' },
   ];
