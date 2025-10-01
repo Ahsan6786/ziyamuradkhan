@@ -8,7 +8,7 @@ export function Hero() {
       id="hero"
       className="relative h-screen min-h-[800px] flex items-center bg-background"
     >
-      <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
+      <div className="relative z-10 container mx-auto px-4 h-full flex items-center pt-48 md:pt-0">
         <div className="w-full md:w-1/2 text-center md:text-left">
           <p className="text-xl md:text-2xl uppercase tracking-widest text-primary font-semibold mb-3">
             Ziya Murad Khan
