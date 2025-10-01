@@ -1,6 +1,5 @@
 import { Hero } from '@/components/landing/hero';
-import { Achievements } from '@/components/landing/achievements';
-import { Competencies } from '@/components/landing/competencies';
+import { About } from '@/components/landing/about';
 import { Experience } from '@/components/landing/experience';
 import { Skills } from '@/components/landing/skills';
 import { Contact } from '@/components/landing/contact';
@@ -24,11 +23,10 @@ import { Button } from '@/components/ui/button';
 
 function Header() {
   const navLinks = [
-    { name: 'About', href: '#hero' },
+    { name: 'About', href: '#about' },
     { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
     { name: 'Certificates', href: '#certificates' },
-    { name: 'Achievements', href: '#achievements' },
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -139,8 +137,7 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <div className="container mx-auto px-4 md:px-6 space-y-20 md:space-y-32 my-20 md:my-32">
-          <Achievements />
-          <Competencies />
+          <About />
           <Experience />
           <Skills />
           <Certificates />
