@@ -19,6 +19,8 @@ export function Hero() {
             priority
           />
           <div className="absolute inset-0 bg-black/60"></div>
+          {/* Gradient Overlay */}
+          <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background to-transparent"></div>
         </div>
 
         {/* Desktop Image */}
@@ -31,6 +33,8 @@ export function Hero() {
             data-ai-hint="professional portrait"
             priority
           />
+           {/* Gradient Overlay */}
+          <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background to-transparent"></div>
         </div>
       </div>
 
