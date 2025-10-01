@@ -11,7 +11,7 @@ export function Hero() {
         {/* Mobile Image */}
         <div className="md:hidden h-full w-full">
           <Image
-            src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/image1.png"
             alt="Ziya Murad Khan"
             fill
             className="object-cover"
@@ -24,7 +24,7 @@ export function Hero() {
         {/* Desktop Image */}
         <div className="hidden md:block absolute top-0 right-0 h-full w-1/2">
           <Image
-            src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/image1.png"
             alt="Ziya Murad Khan"
             fill
             className="object-cover"
@@ -35,7 +35,7 @@ export function Hero() {
       </div>
 
       {/* Text Content */}
-      <div className="relative z-10 container mx-auto px-4 h-full flex items-center pt-48 md:pt-0">
+      <div className="relative z-10 container mx-auto px-4 h-full flex items-center pt-56 md:pt-0">
         <div className="w-full md:w-1/2 text-center md:text-left">
           <p className="text-xl md:text-2xl uppercase tracking-widest text-primary font-semibold mb-3">
             Ziya Murad Khan
