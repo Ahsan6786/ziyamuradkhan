@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative h-screen min-h-[800px] flex items-center bg-background"
+      className="relative h-[80vh] min-h-[600px] max-h-[700px] md:max-h-[800px] flex items-center bg-background"
     >
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
@@ -39,7 +39,7 @@ export function Hero() {
       </div>
 
       {/* Text Content */}
-      <div className="relative z-10 container mx-auto px-4 h-full flex items-center pt-56 md:pt-0">
+      <div className="relative z-10 container mx-auto px-4 h-full flex items-center pt-32 md:pt-0">
         <div className="w-full md:w-1/2 text-center md:text-left">
           <p className="text-xl md:text-2xl uppercase tracking-widest text-primary font-semibold mb-3">
             Ziya Murad Khan
