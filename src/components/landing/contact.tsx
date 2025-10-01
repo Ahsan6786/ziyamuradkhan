@@ -70,7 +70,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact">
+    <section id="contact" className="animate-in" style={{ animationDelay: '1000ms' }}>
       <Card className="max-w-2xl mx-auto">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl md:text-4xl font-headline font-bold text-primary">

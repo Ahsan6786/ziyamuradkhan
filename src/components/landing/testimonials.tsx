@@ -34,7 +34,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="space-y-12">
+    <section id="testimonials" className="space-y-12 animate-in" style={{ animationDelay: '800ms' }}>
       <div className="text-center space-y-3">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary tracking-tight">
           Testimonials

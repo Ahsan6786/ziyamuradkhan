@@ -25,7 +25,7 @@ const competencies = [
 
 export function About() {
   return (
-    <section id="about" className="space-y-12">
+    <section id="about" className="space-y-12 animate-in">
       <div className="text-center space-y-4">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary tracking-tight">
           About Ziya Murad Khan

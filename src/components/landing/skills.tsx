@@ -26,7 +26,7 @@ const softSkills = [
 
 export function Skills() {
   return (
-    <section id="skills" className="space-y-12">
+    <section id="skills" className="space-y-12 animate-in" style={{ animationDelay: '400ms' }}>
       <div className="text-center space-y-3">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary tracking-tight">
           Skills & Expertise
