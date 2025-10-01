@@ -32,11 +32,11 @@ export function Certificates() {
           align: 'start',
           loop: true,
         }}
-        className="w-full max-w-4xl mx-auto"
+        className="w-full max-w-6xl mx-auto"
       >
         <CarouselContent>
           {certificateImages.map((src, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={index} className="sm:basis-1/2 md:basis-1/2 lg:basis-1/3">
               <div className="p-1">
                 <Card>
                   <CardContent className="flex aspect-video items-center justify-center p-0 rounded-lg overflow-hidden">
