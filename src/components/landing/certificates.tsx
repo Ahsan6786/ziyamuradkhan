@@ -9,8 +9,6 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
-import { useEffect, useState } from 'react';
-import type { CarouselApi } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 
 
@@ -41,7 +39,7 @@ export function Certificates() {
         }}
         plugins={[
           Autoplay({
-            delay: 3000,
+            delay: 6000,
           }),
         ]}
         className="w-full max-w-6xl mx-auto"
@@ -65,8 +63,8 @@ export function Certificates() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="left-2 md:-left-12" />
+        <CarouselNext className="right-2 md:-right-12" />
       </Carousel>
     </section>
   );
