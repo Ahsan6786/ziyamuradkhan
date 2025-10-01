@@ -1,65 +1,50 @@
-
-import Image from 'next/image';
-import { Button } from '@/components/ui/button';
-import { ArrowDown } from 'lucide-react';
+import {Button} from '@/components/ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function Hero() {
   return (
     <section
       id="hero"
-      className="relative h-screen min-h-[700px] flex items-center justify-center text-white"
+      className="relative h-screen min-h-[800px] flex items-center bg-background"
     >
-      {/* Background for mobile */}
-      <div className="absolute inset-0 z-0 md:hidden">
-        <Image
-          src="/image1.png"
-          alt="Background"
-          fill
-          className="object-cover"
-          data-ai-hint="office workspace"
-        />
-        <div className="absolute inset-0 bg-black/60"></div>
-      </div>
-
-      {/* Content for all screen sizes */}
-      <div className="relative z-10 container mx-auto px-4 h-full">
-        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between h-full">
-          {/* Text content - takes full width on mobile, half on desktop */}
-          <div className="w-full md:w-1/2 text-center md:text-left pt-56 md:pt-0">
-            <p className="text-lg uppercase tracking-widest text-primary font-semibold mb-2">
-              Ziya Murad Khan
-            </p>
-            <h1 className="text-4xl md:text-6xl font-headline font-bold mb-8">
-              Driving Growth in Banking & Telecom
-            </h1>
-            <div className="flex gap-4 justify-center md:justify-start">
-              <Link href="#contact">
-                <Button size="lg" className="font-bold text-lg px-8 py-6">
-                  Get in Touch
-                </Button>
-              </Link>
-            </div>
-          </div>
-
-          {/* Image content - hidden on mobile, takes half on desktop */}
-          <div className="hidden md:flex md:w-1/2 justify-center items-center h-full">
-            <div className="relative w-full h-full">
-              <Image
-                src="/image1.png"
-                alt="Ziya Murad Khan"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
+      <div className="relative z-10 container mx-auto px-4 h-full flex items-center">
+        <div className="w-full md:w-1/2 text-center md:text-left">
+          <p className="text-xl md:text-2xl uppercase tracking-widest text-primary font-semibold mb-3">
+            Ziya Murad Khan
+          </p>
+          <h1 className="text-5xl md:text-7xl font-headline font-bold text-white">
+            Driving Growth in Banking & Telecom
+          </h1>
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 md:hidden">
-        <a href="#achievements">
-          <ArrowDown className="w-8 h-8 text-white/70 animate-bounce" />
-        </a>
+      {/* Desktop Image */}
+      <div className="hidden md:block absolute top-0 right-0 h-full w-1/2">
+        <Image
+          src="/ziya.png"
+          alt="Ziya Murad Khan"
+          fill
+          className="object-cover"
+          data-ai-hint="professional portrait"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-l from-black/30 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background to-transparent"></div>
+      </div>
+
+      {/* Mobile background */}
+      <div className="md:hidden absolute inset-0 z-0">
+        <Image
+          src="/ziya.png"
+          alt="Background"
+          fill
+          className="object-cover"
+          data-ai-hint="professional portrait"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background to-transparent"></div>
       </div>
     </section>
   );
