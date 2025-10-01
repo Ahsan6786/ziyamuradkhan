@@ -1,20 +1,18 @@
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Progress } from '@/components/ui/progress';
-import { Check } from 'lucide-react';
+import { CheckCircle, Zap, TrendingUp, Users, Handshake, Briefcase, Award } from 'lucide-react';
 
 const technicalSkills = [
-  { name: 'Corporate Sales & B2B', level: 95 },
-  { name: 'Team Leadership & Management', level: 90 },
-  { name: 'Strategic Account Management', level: 85 },
-  { name: 'Channel Partner Development', level: 88 },
-  { name: 'Business Development', level: 92 },
-  { name: 'Sales Forecasting & Strategy', level: 80 },
+  { name: 'Corporate Sales & B2B', icon: <Briefcase className="w-5 h-5 text-primary" /> },
+  { name: 'Team Leadership & Management', icon: <Users className="w-5 h-5 text-primary" /> },
+  { name: 'Strategic Account Management', icon: <Handshake className="w-5 h-5 text-primary" /> },
+  { name: 'Channel Partner Development', icon: <Zap className="w-5 h-5 text-primary" /> },
+  { name: 'Business Development', icon: <TrendingUp className="w-5 h-5 text-primary" /> },
+  { name: 'Sales Forecasting & Strategy', icon: <Award className="w-5 h-5 text-primary" /> },
 ];
 
 const softSkills = [
@@ -45,18 +43,13 @@ export function Skills() {
               Technical & Sales Expertise
             </CardTitle>
           </CardHeader>
-          <CardContent className="space-y-6">
+          <CardContent className="space-y-4">
             {technicalSkills.map((skill) => (
-              <div key={skill.name} className="space-y-2">
-                <div className="flex justify-between items-center">
-                  <p className="font-medium text-foreground/90">
-                    {skill.name}
-                  </p>
-                  <p className="text-sm text-primary font-semibold">
-                    {skill.level}%
-                  </p>
+              <div key={skill.name} className="flex items-center gap-4">
+                 <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  {skill.icon}
                 </div>
-                <Progress value={skill.level} className="h-2" />
+                <p className="font-medium text-foreground/90">{skill.name}</p>
               </div>
             ))}
           </CardContent>
@@ -70,8 +63,8 @@ export function Skills() {
           <CardContent className="space-y-4">
             {softSkills.map((skill) => (
               <div key={skill} className="flex items-center gap-3">
-                <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Check className="w-4 h-4 text-primary" />
+                <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <CheckCircle className="w-4 h-4 text-primary" />
                 </div>
                 <p className="text-foreground/90 font-medium">{skill}</p>
               </div>
