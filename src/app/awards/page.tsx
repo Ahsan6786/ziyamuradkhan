@@ -12,7 +12,7 @@ import { ArrowLeft } from 'lucide-react';
 
 const awardsData = [
     {
-        fileName: '/a1.png',
+        fileName: '/a1.jpg',
         title: 'Health Insurance Excellence',
         company: 'RBL Bank & Care Health Insurance',
         year: '2023–24',
@@ -20,7 +20,7 @@ const awardsData = [
         imageHint: 'award plaque'
     },
     {
-        fileName: '/a2.png',
+        fileName: '/a2.jpg',
         title: 'Certificate of Appreciation',
         company: 'ICICI Lombard & RBL Bank',
         year: 'N/A',
@@ -28,7 +28,7 @@ const awardsData = [
         imageHint: 'certificate award'
     },
     {
-        fileName: '/a3.png',
+        fileName: '/a3.jpg',
         title: 'Outstanding Performance GI',
         company: 'RBL Bank',
         year: 'Jan 2024',
@@ -36,7 +36,7 @@ const awardsData = [
         imageHint: 'award plaque'
     },
     {
-        fileName: '/a4.png',
+        fileName: '/a4.jpg',
         title: 'Business Excellence Star',
         company: 'RBL Bank',
         year: 'N/A',
@@ -44,7 +44,7 @@ const awardsData = [
         imageHint: 'star trophy'
     },
     {
-        fileName: '/a5.png',
+        fileName: '/a5.jpeg',
         title: 'GI Business Performance',
         company: 'N/A',
         year: 'N/A',
@@ -52,7 +52,7 @@ const awardsData = [
         imageHint: 'crystal trophy'
     },
     {
-        fileName: '/a6.png',
+        fileName: '/a6.JPG',
         title: 'Outstanding GI Performance',
         company: 'RBL Bank',
         year: 'N/A',
@@ -60,7 +60,7 @@ const awardsData = [
         imageHint: 'crystal trophy'
     },
     {
-        fileName: '/a7.png',
+        fileName: '/a7.JPG',
         title: 'Exceptional Business Performance',
         company: 'RBL Bank',
         year: 'N/A',
@@ -68,7 +68,7 @@ const awardsData = [
         imageHint: 'award trophy'
     },
     {
-        fileName: '/a9.png',
+        fileName: '/a9.jpg',
         title: 'Cluster-Level Excellence',
         company: 'N/A',
         year: 'Mar 2024',
