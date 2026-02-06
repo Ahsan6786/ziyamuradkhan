@@ -91,7 +91,7 @@ const awardsData = [
     {
         fileName: '/a13.png',
         title: 'Centurion Club',
-        company: 'Sales Achievement',
+        company: 'Reliance Communications',
         year: 'N/A',
         imageHint: 'club award'
     },
