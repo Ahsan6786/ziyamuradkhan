@@ -13,6 +13,9 @@ const experiences = [
     period: 'Sep 2023 - November 2025',
     details: [
       'Managed customer relationships and provided private banking services.',
+      'Managed salary accounts and cross-selling via long-term engagement with HR/Admin/Finance heads.',
+      'Collaborated with channel partners for product upsell including loans, insurance, and forex.',
+      'Achieved multiple awards for service and client success.',
     ],
   },
   {
