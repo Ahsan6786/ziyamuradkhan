@@ -73,7 +73,18 @@ function Header() {
             </Link>
           ))}
         </div>
-        <div className="md:hidden">
+        <div className="flex items-center gap-2 md:hidden">
+          {socialLinks.map((social, index) => (
+            <Link
+              key={index}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-primary transition-colors"
+            >
+              {social.icon}
+            </Link>
+          ))}
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
