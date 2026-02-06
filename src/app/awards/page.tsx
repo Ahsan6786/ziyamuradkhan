@@ -16,7 +16,6 @@ const awardsData = [
         title: 'Health Insurance Excellence',
         company: 'RBL Bank & Care Health Insurance',
         year: '2023–24',
-        description: 'Golden wooden plaque awarded for outstanding performance in Health Insurance Business. Recognizes exceptional contribution and consistent sales excellence at SM – Salary Meera Bagh Branch.',
         imageHint: 'award plaque'
     },
     {
@@ -24,7 +23,6 @@ const awardsData = [
         title: 'Certificate of Appreciation',
         company: 'ICICI Lombard & RBL Bank',
         year: 'N/A',
-        description: 'Jointly issued certificate recognizing contribution and participation in General Insurance business. Awarded for professional performance and dedication in achieving business targets.',
         imageHint: 'certificate award'
     },
     {
@@ -32,7 +30,6 @@ const awardsData = [
         title: 'Outstanding Performance GI',
         company: 'RBL Bank',
         year: 'Jan 2024',
-        description: 'RBL Bank congratulatory plaque awarded for outstanding performance in General Insurance. Highlights exceptional sales achievements and business growth contribution at cluster level.',
         imageHint: 'award plaque'
     },
     {
@@ -40,7 +37,6 @@ const awardsData = [
         title: 'Business Excellence Star',
         company: 'RBL Bank',
         year: 'N/A',
-        description: 'Premium star-shaped trophy recognizing exceptional performance in business excellence. Symbolizes top-tier achievement and leadership performance in insurance sales.',
         imageHint: 'star trophy'
     },
     {
@@ -48,7 +44,6 @@ const awardsData = [
         title: 'GI Business Performance',
         company: 'N/A',
         year: 'N/A',
-        description: 'Modern crystal-gold fusion trophy awarded for outstanding performance in General Insurance Business. The design reflects excellence, innovation, and sustained achievement in financial services.',
         imageHint: 'crystal trophy'
     },
     {
@@ -56,7 +51,6 @@ const awardsData = [
         title: 'Outstanding GI Performance',
         company: 'RBL Bank',
         year: 'N/A',
-        description: 'Elegant curved golden crystal trophy presented for outstanding performance in GI Business. Recognizes strategic contribution to revenue growth and client acquisition.',
         imageHint: 'crystal trophy'
     },
     {
@@ -64,7 +58,6 @@ const awardsData = [
         title: 'Exceptional Business Performance',
         company: 'RBL Bank',
         year: 'N/A',
-        description: 'Wooden and gold finish achievement trophy awarded for exceptional business performance. Recognizes high-impact sales performance and consistent target achievement.',
         imageHint: 'award trophy'
     },
     {
@@ -72,7 +65,6 @@ const awardsData = [
         title: 'Cluster-Level Excellence',
         company: 'N/A',
         year: 'Mar 2024',
-        description: 'Stage display of multiple corporate performance awards presented during recognition ceremony. Showcases cluster-level excellence awards for life and general insurance business performance.',
         imageHint: 'awards display'
     },
 ];
@@ -137,12 +129,9 @@ export default function AwardsPage() {
                                     </CardHeader>
                                     <CardContent className="p-4 flex flex-col flex-grow">
                                         <CardTitle className="font-headline text-xl mb-2">{award.title}</CardTitle>
-                                        <CardDescription className="text-xs uppercase tracking-wider text-muted-foreground mb-3">
+                                        <CardDescription className="text-xs uppercase tracking-wider text-muted-foreground">
                                             {award.company} {award.year !== 'N/A' && `• ${award.year}`}
                                         </CardDescription>
-                                        <p className="text-sm text-foreground/80 flex-grow">
-                                            {award.description}
-                                        </p>
                                     </CardContent>
                                 </Card>
                             ))}
