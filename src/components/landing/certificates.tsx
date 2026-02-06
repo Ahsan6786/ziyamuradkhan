@@ -5,31 +5,36 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from '@/components/ui/carousel';
 import { Card, CardContent } from '@/components/ui/card';
 import Autoplay from "embla-carousel-autoplay"
 
-
-const certificateImages = [
-  '/certificate1.jpg',
-  '/certificate2.jpg',
-  '/certificate3.jpg',
-  '/certificate4.jpg',
-  '/certificate5.jpg',
+const awardsData = [
+    { fileName: '/a1.png', title: 'Health Insurance Excellence' },
+    { fileName: '/a2.png', title: 'Certificate of Appreciation' },
+    { fileName: '/a3.png', title: 'Outstanding Performance GI' },
+    { fileName: '/a4.png', title: 'Business Excellence Star' },
+    { fileName: '/a5.png', title: 'GI Business Performance' },
+    { fileName: '/a6.png', title: 'Outstanding GI Performance' },
+    { fileName: '/a7.png', title: 'Exceptional Business Performance' },
+    { fileName: '/a9.png', title: 'Cluster-Level Excellence' },
+    { fileName: '/a10.png', title: 'Special Recognition' },
+    { fileName: '/a11.png', title: 'Best TL of the Month' },
+    { fileName: '/a12.png', title: 'Top Performer Award' },
+    { fileName: '/a13.png', title: 'Centurion Club' },
 ];
+
 
 export function Certificates() {
 
   return (
-    <section id="certificates" className="space-y-12 animate-in" style={{ animationDelay: '600ms' }}>
+    <section id="awards-gallery" className="space-y-12 animate-in" style={{ animationDelay: '600ms' }}>
       <div className="text-center space-y-3">
         <h2 className="text-3xl md:text-4xl font-headline font-bold text-primary tracking-tight">
-          Certificates
+          Awards & Recognitions
         </h2>
         <p className="text-lg md:text-xl text-foreground/70 max-w-3xl mx-auto">
-          A collection of my professional certifications and qualifications.
+          A gallery of my professional achievements and accolades.
         </p>
       </div>
       <Carousel
@@ -39,32 +44,32 @@ export function Certificates() {
         }}
         plugins={[
           Autoplay({
-            delay: 6000,
+            delay: 2500,
+            stopOnInteraction: false,
           }),
         ]}
-        className="w-full max-w-6xl mx-auto"
+        className="w-full"
       >
         <CarouselContent>
-          {certificateImages.map((src, index) => (
-            <CarouselItem key={index} className="sm:basis-1/2 md:basis-1/2 lg:basis-1/3">
+          {awardsData.map((award, index) => (
+            <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
               <div className="p-1">
-                <Card>
-                  <CardContent className="flex aspect-video items-center justify-center p-0 rounded-lg overflow-hidden">
-                    <Image
-                      src={src}
-                      alt={`Certificate ${index + 1}`}
-                      width={600}
-                      height={400}
-                      className="object-cover w-full h-full"
-                    />
+                <Card className="overflow-hidden">
+                  <CardContent className="p-0">
+                    <div className="aspect-[4/3] relative bg-muted/20">
+                      <Image
+                        src={award.fileName}
+                        alt={award.title}
+                        fill
+                        className="object-contain p-4"
+                      />
+                    </div>
                   </CardContent>
                 </Card>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="left-2 md:-left-12" />
-        <CarouselNext className="right-2 md:-right-12" />
       </Carousel>
     </section>
   );

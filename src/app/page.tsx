@@ -4,6 +4,7 @@ import { Experience } from '@/components/landing/experience';
 import { Skills } from '@/components/landing/skills';
 import { Contact } from '@/components/landing/contact';
 import { Testimonials } from '@/components/landing/testimonials';
+import { Certificates } from '@/components/landing/certificates';
 import {
   Linkedin,
   Instagram,
@@ -142,6 +143,7 @@ export default function Home() {
           <About />
           <Experience />
           <Skills />
+          <Certificates />
           <Testimonials />
           <Contact />
         </div>
