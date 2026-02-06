@@ -61,7 +61,7 @@ export function Certificates() {
               <div className="p-1">
                 <Card className="overflow-hidden">
                   <CardContent className="p-0">
-                    <div className="aspect-[4/3] relative bg-muted/20">
+                    <div className="aspect-[4/3] relative bg-black">
                       <Image
                         src={award.fileName}
                         alt={award.title}

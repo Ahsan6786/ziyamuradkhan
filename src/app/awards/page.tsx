@@ -91,7 +91,7 @@ const awardsData = [
     {
         fileName: '/a13.png',
         title: 'Reliance Communications',
-        company: 'Centurion Club',
+        company: 'Reliance Communications',
         year: 'N/A',
         imageHint: 'club award'
     },
@@ -142,7 +142,7 @@ export default function AwardsPage() {
                             {awardsData.map((award, index) => (
                                 <Card key={index} className="overflow-hidden flex flex-col animate-in hover:shadow-lg transition-shadow duration-300" style={{ animationDelay: `${index * 100}ms` }}>
                                     <CardHeader className="p-0">
-                                        <div className="aspect-[4/3] relative bg-muted/20">
+                                        <div className="aspect-[4/3] relative bg-black">
                                             <Image
                                                 src={award.fileName}
                                                 alt={award.title}
