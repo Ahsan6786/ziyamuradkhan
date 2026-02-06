@@ -12,84 +12,84 @@ import { ArrowLeft } from 'lucide-react';
 
 const awardsData = [
     {
-        fileName: '/a1.jpg',
+        fileName: '/a1.png',
         title: 'Health Insurance Excellence',
         company: 'RBL Bank',
         year: '2023–24',
         imageHint: 'award plaque'
     },
     {
-        fileName: '/a2.jpg',
+        fileName: '/a2.png',
         title: 'Certificate of Appreciation',
         company: 'General Health Insurance',
         year: 'N/A',
         imageHint: 'certificate award'
     },
     {
-        fileName: '/a3.jpg',
+        fileName: '/a3.png',
         title: 'Outstanding Performance GI',
         company: 'RBL Bank',
         year: 'Jan 2024',
         imageHint: 'award plaque'
     },
     {
-        fileName: '/a4.jpg',
+        fileName: '/a4.png',
         title: 'Business Excellence Star',
         company: 'Team Award',
         year: 'N/A',
         imageHint: 'star trophy'
     },
     {
-        fileName: '/a5.jpeg',
+        fileName: '/a5.png',
         title: 'GI Business Performance',
         company: 'RBL Bank',
         year: 'N/A',
         imageHint: 'crystal trophy'
     },
     {
-        fileName: '/a6.JPG',
+        fileName: '/a6.png',
         title: 'Outstanding GI Performance',
         company: 'ICICI Lombard',
         year: 'N/A',
         imageHint: 'crystal trophy'
     },
     {
-        fileName: '/a7.JPG',
+        fileName: '/a7.png',
         title: 'Exceptional Business Performance',
         company: 'RBL Bank',
         year: 'N/A',
         imageHint: 'award trophy'
     },
     {
-        fileName: '/a9.jpg',
+        fileName: '/a9.png',
         title: 'Cluster-Level Excellence',
         company: 'RBL Bank',
         year: 'Mar 2024',
         imageHint: 'awards display'
     },
     {
-        fileName: '/a10.jpg',
+        fileName: '/a10.png',
         title: 'Special Recognition',
         company: 'RBL Bank',
         year: 'N/A',
         imageHint: 'award trophy'
     },
     {
-        fileName: '/a11.jpg',
+        fileName: '/a11.png',
         title: 'Best TL of the Month',
         company: 'Leadership Award',
         year: 'N/A',
         imageHint: 'certificate'
     },
     {
-        fileName: '/a12.jpg',
+        fileName: '/a12.png',
         title: 'Top Performer Award',
         company: 'RBL Bank',
         year: 'N/A',
         imageHint: 'award plaque'
     },
     {
-        fileName: '/a13.jpg',
+        fileName: '/a13.png',
         title: 'Centurion Club',
         company: 'Sales Achievement',
         year: 'N/A',
