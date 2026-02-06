@@ -3,7 +3,6 @@
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { submitContactForm } from '@/app/actions';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -23,7 +22,6 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -34,7 +32,6 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>;
 
 export function Contact() {
-  const { toast } = useToast();
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -44,29 +41,13 @@ export function Contact() {
     },
   });
 
-  const onSubmit = async (data: FormData) => {
-    const formData = new FormData();
-    formData.append('name', data.name);
-    formData.append('email', data.email);
-    formData.append('message', data.message);
-
-    // We pass a dummy `null` for `prevState` as we are not using `useFormState`
-    const result = await submitContactForm(null, formData);
-
-    if (result.success) {
-      toast({
-        title: 'Message Sent!',
-        description: result.message,
-      });
-      form.reset();
-    } else {
-      toast({
-        variant: 'destructive',
-        title: 'Oops! Something went wrong.',
-        description:
-          result.message || 'There was a problem with your submission.',
-      });
-    }
+  const onSubmit = (data: FormData) => {
+    const subject = encodeURIComponent(`Portfolio Contact: ${data.name}`);
+    const body = encodeURIComponent(
+      `${data.message}\n\nFrom: ${data.name} (${data.email})`
+    );
+    window.location.href = `mailto:ziyakhan22@yahoo.co.in?subject=${subject}&body=${body}`;
+    form.reset();
   };
 
   return (
@@ -136,7 +117,7 @@ export function Contact() {
                 className="w-full"
                 size="lg"
               >
-                {form.formState.isSubmitting ? 'Sending...' : 'Send Message'}
+                Send Message
               </Button>
             </form>
           </Form>

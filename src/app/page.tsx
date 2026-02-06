@@ -5,12 +5,7 @@ import { Skills } from '@/components/landing/skills';
 import { Contact } from '@/components/landing/contact';
 import { Testimonials } from '@/components/landing/testimonials';
 import { Certificates } from '@/components/landing/certificates';
-import {
-  Linkedin,
-  Instagram,
-  Twitter,
-  Menu,
-} from 'lucide-react';
+import { Menu } from 'lucide-react';
 import Link from 'next/link';
 import {
   Sheet,
@@ -32,15 +27,6 @@ function Header() {
     { name: 'Contact', href: '#contact' },
   ];
 
-  const socialLinks = [
-    {
-      icon: <Linkedin className="w-5 h-5" />,
-      href: 'https://www.linkedin.com/in/ziyamkhan/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
-    },
-    { icon: <Twitter className="w-5 h-5" />, href: 'https://twitter.com' },
-    { icon: <Instagram className="w-5 h-5" />, href: 'https://instagram.com' },
-  ];
-
   return (
     <header className="py-4 px-4 md:px-6 absolute top-0 left-0 right-0 z-20 bg-transparent">
       <div className="container mx-auto flex justify-between items-center">
@@ -60,31 +46,7 @@ function Header() {
             </Link>
           ))}
         </nav>
-        <div className="hidden md:flex items-center gap-4">
-          {socialLinks.map((social, index) => (
-            <Link
-              key={index}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-primary transition-colors"
-            >
-              {social.icon}
-            </Link>
-          ))}
-        </div>
         <div className="flex items-center gap-2 md:hidden">
-          {socialLinks.map((social, index) => (
-            <Link
-              key={index}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-primary transition-colors"
-            >
-              {social.icon}
-            </Link>
-          ))}
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
@@ -109,19 +71,6 @@ function Header() {
                     </SheetClose>
                   ))}
                 </nav>
-                <div className="flex items-center gap-4 mt-auto mb-6">
-                  {socialLinks.map((social, index) => (
-                    <Link
-                      key={index}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-primary transition-colors"
-                    >
-                      {social.icon}
-                    </Link>
-                  ))}
-                </div>
               </div>
             </SheetContent>
           </Sheet>

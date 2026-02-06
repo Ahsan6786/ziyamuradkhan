@@ -1,6 +1,17 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import { Linkedin, Instagram, Twitter } from 'lucide-react';
 
 export function Hero() {
+  const socialLinks = [
+    {
+      icon: <Linkedin className="w-6 h-6" />,
+      href: 'https://www.linkedin.com/in/ziyamkhan/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+    },
+    { icon: <Twitter className="w-6 h-6" />, href: 'https://twitter.com' },
+    { icon: <Instagram className="w-6 h-6" />, href: 'https://instagram.com' },
+  ];
+
   return (
     <section
       id="hero"
@@ -40,13 +51,26 @@ export function Hero() {
 
       {/* Text Content */}
       <div className="relative z-10 container mx-auto px-4 h-full flex items-center pt-32 md:pt-0">
-        <div className="w-full md:w-1/2 text-center md:text-left">
+        <div className="w-full md:w-2/3 text-center md:text-left">
           <p className="text-xl md:text-2xl uppercase tracking-widest text-primary font-semibold mb-3">
             Ziya Murad Khan
           </p>
           <h1 className="text-5xl md:text-7xl font-headline font-bold text-white">
             Driving Growth in Banking & Telecom
           </h1>
+          <div className="mt-8 flex justify-center md:justify-start gap-6">
+            {socialLinks.map((social, index) => (
+              <Link
+                key={index}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-primary transition-colors"
+              >
+                {social.icon}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>
