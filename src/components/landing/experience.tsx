@@ -10,7 +10,7 @@ const experiences = [
   {
     role: 'Senior Manager',
     company: 'RBL Bank',
-    period: 'Sep 2023 - Present',
+    period: 'Sep 2023 - November 2025',
     details: [
       'Managed customer relationships and provided private banking services.',
     ],
