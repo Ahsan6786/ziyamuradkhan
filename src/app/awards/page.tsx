@@ -14,14 +14,14 @@ const awardsData = [
     {
         fileName: '/a1.jpg',
         title: 'Health Insurance Excellence',
-        company: 'RBL Bank & Care Health Insurance',
+        company: 'RBL Bank',
         year: '2023–24',
         imageHint: 'award plaque'
     },
     {
         fileName: '/a2.jpg',
         title: 'Certificate of Appreciation',
-        company: 'ICICI Lombard & RBL Bank',
+        company: 'General Health Insurance',
         year: 'N/A',
         imageHint: 'certificate award'
     },
@@ -35,21 +35,21 @@ const awardsData = [
     {
         fileName: '/a4.jpg',
         title: 'Business Excellence Star',
-        company: 'RBL Bank',
+        company: 'Team Award',
         year: 'N/A',
         imageHint: 'star trophy'
     },
     {
         fileName: '/a5.jpeg',
         title: 'GI Business Performance',
-        company: 'N/A',
+        company: 'RBL Bank',
         year: 'N/A',
         imageHint: 'crystal trophy'
     },
     {
         fileName: '/a6.JPG',
         title: 'Outstanding GI Performance',
-        company: 'RBL Bank',
+        company: 'ICICI Lombard',
         year: 'N/A',
         imageHint: 'crystal trophy'
     },
@@ -63,7 +63,7 @@ const awardsData = [
     {
         fileName: '/a9.jpg',
         title: 'Cluster-Level Excellence',
-        company: 'N/A',
+        company: 'RBL Bank',
         year: 'Mar 2024',
         imageHint: 'awards display'
     },
