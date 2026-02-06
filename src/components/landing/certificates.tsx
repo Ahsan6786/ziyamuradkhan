@@ -21,7 +21,7 @@ const awardsData = [
     { fileName: '/a10.png', title: 'Special Recognition' },
     { fileName: '/a11.png', title: 'Best TL of the Month' },
     { fileName: '/a12.png', title: 'Top Performer Award' },
-    { fileName: '/a13.png', title: 'Centurion Club' },
+    { fileName: '/a13.png', title: 'Reliance Communications' },
     { fileName: '/certificate1.jpg', title: 'Professional Certificate' },
     { fileName: '/certificate2.jpg', title: 'Professional Certificate' },
     { fileName: '/certificate3.jpg', title: 'Professional Certificate' },

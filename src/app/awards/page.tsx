@@ -90,8 +90,8 @@ const awardsData = [
     },
     {
         fileName: '/a13.png',
-        title: 'Centurion Club',
-        company: 'Reliance Communications',
+        title: 'Reliance Communications',
+        company: 'Centurion Club',
         year: 'N/A',
         imageHint: 'club award'
     },
@@ -102,9 +102,6 @@ function Footer() {
     <footer className="py-8 px-4 md:px-6 bg-background text-foreground/60">
       <div className="container mx-auto text-center text-sm">
         <p>&copy; {new Date().getFullYear()} Ziya Khan. All Rights Reserved.</p>
-        <p className="mt-2">
-          Built with Next.js and Tailwind CSS. Hosted on Firebase.
-        </p>
       </div>
     </footer>
   );
