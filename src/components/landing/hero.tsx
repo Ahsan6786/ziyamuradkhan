@@ -50,7 +50,7 @@ export function Hero() {
       </div>
 
       {/* Text Content */}
-      <div className="relative z-10 container mx-auto px-4 h-full flex items-center pt-32 md:pt-0">
+      <div className="relative z-10 container mx-auto px-4 h-full flex items-center pt-40 md:pt-0">
         <div className="w-full md:w-2/3 text-center md:text-left">
           <p className="text-xl md:text-2xl uppercase tracking-widest text-primary font-semibold mb-3">
             Ziya Murad Khan
