@@ -67,6 +67,34 @@ const awardsData = [
         year: 'Mar 2024',
         imageHint: 'awards display'
     },
+    {
+        fileName: '/a10.jpg',
+        title: 'Special Recognition',
+        company: 'RBL Bank',
+        year: 'N/A',
+        imageHint: 'award trophy'
+    },
+    {
+        fileName: '/a11.jpg',
+        title: 'Best TL of the Month',
+        company: 'Leadership Award',
+        year: 'N/A',
+        imageHint: 'certificate'
+    },
+    {
+        fileName: '/a12.jpg',
+        title: 'Top Performer Award',
+        company: 'RBL Bank',
+        year: 'N/A',
+        imageHint: 'award plaque'
+    },
+    {
+        fileName: '/a13.jpg',
+        title: 'Centurion Club',
+        company: 'Sales Achievement',
+        year: 'N/A',
+        imageHint: 'club award'
+    },
 ];
 
 function Footer() {
