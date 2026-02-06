@@ -22,6 +22,11 @@ const awardsData = [
     { fileName: '/a11.png', title: 'Best TL of the Month' },
     { fileName: '/a12.png', title: 'Top Performer Award' },
     { fileName: '/a13.png', title: 'Centurion Club' },
+    { fileName: '/certificate1.jpg', title: 'Professional Certificate' },
+    { fileName: '/certificate2.jpg', title: 'Professional Certificate' },
+    { fileName: '/certificate3.jpg', title: 'Professional Certificate' },
+    { fileName: '/certificate4.jpg', title: 'Professional Certificate' },
+    { fileName: '/certificate5.jpg', title: 'Professional Certificate' },
 ];
 
 
