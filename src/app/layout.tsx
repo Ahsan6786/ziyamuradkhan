@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Ziya Khan Portfolio',
   description:
     'Portfolio of Ziya Khan, a professional in the banking and telecom industries.',
+  openGraph: {
+    images: ['/image1.png'],
+  },
 };
 
 export default function RootLayout({
