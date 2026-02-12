@@ -4,9 +4,10 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Ziya Khan Portfolio',
+  title: 'Ziya Murad Khan | Banking & Telecom Portfolio',
   description:
-    'Portfolio of Ziya Khan, a professional in the banking and telecom industries.',
+    'Explore the portfolio of Ziya Murad Khan, a results-driven sales leader and banking service provider with over 12 years of experience in the banking and telecom sectors. Specializing in corporate sales, team leadership, and strategic account management.',
+  keywords: ['Ziya Murad Khan', 'Ziya Khan', 'banking services', 'telecom sales', 'corporate sales', 'sales leader', 'RBL Bank', 'IndusInd Bank', 'portfolio']
 };
 
 export default function RootLayout({
