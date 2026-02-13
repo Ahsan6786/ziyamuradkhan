@@ -22,7 +22,7 @@ export function Hero() {
         {/* Mobile Image */}
         <div className="md:hidden h-full w-full">
           <Image
-            src="/image1.png"
+            src="/a1.png"
             alt="Ziya Murad Khan"
             fill
             className="object-cover"
@@ -37,7 +37,7 @@ export function Hero() {
         {/* Desktop Image */}
         <div className="hidden md:block absolute top-0 right-0 h-full w-1/2">
           <Image
-            src="/image1.png"
+            src="/a1.png"
             alt="Ziya Murad Khan"
             fill
             className="object-cover"
