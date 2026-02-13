@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Ziya Murad Khan Portfolio",
     images: [
       {
-        url: "/a1.png?v=4",
+        url: "/og-profile.png",
         width: 800,
         height: 600,
         alt: "Ziya Murad Khan",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: title,
     description: "Portfolio of Ziya Murad Khan, showcasing over 12 years of experience.",
-    images: ["/a1.png?v=4"],
+    images: ["/og-profile.png"],
   },
   viewport: {
     width: 'device-width',
@@ -58,7 +58,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Ziya Murad Khan',
-  image: '/a1.png?v=4',
+  image: '/og-profile.png',
   sameAs: [
     'https://www.linkedin.com/in/ziyamkhan/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
     'https://twitter.com',
