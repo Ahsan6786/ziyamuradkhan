@@ -12,13 +12,6 @@ import { ArrowLeft } from 'lucide-react';
 
 const awardsData = [
     {
-        fileName: '/a1.png',
-        title: 'Health Insurance Excellence',
-        company: 'RBL Bank',
-        year: '2023–24',
-        imageHint: 'award plaque'
-    },
-    {
         fileName: '/a2.png',
         title: 'Certificate of Appreciation',
         company: 'General Health Insurance',

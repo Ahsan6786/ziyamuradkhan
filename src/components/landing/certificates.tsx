@@ -10,7 +10,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import Autoplay from "embla-carousel-autoplay"
 
 const awardsData = [
-    { fileName: '/a1.png', title: 'Health Insurance Excellence' },
     { fileName: '/a2.png', title: 'Certificate of Appreciation' },
     { fileName: '/a3.png', title: 'Outstanding Performance GI' },
     { fileName: '/a4.png', title: 'Business Excellence Star' },
