@@ -9,6 +9,7 @@ import {
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 const awardsData = [
     {
@@ -117,7 +118,7 @@ export default function AwardsPage() {
                         ZIYA
                       </h1>
                     </Link>
-                    <div className="w-40 md:w-48"></div> {/* Spacer to balance the header */}
+                    <ThemeToggle />
                 </div>
             </header>
             <main className="flex-grow">

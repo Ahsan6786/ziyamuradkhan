@@ -16,6 +16,7 @@ import {
   SheetTitle,
 } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 function Header() {
   const navLinks = [
@@ -35,45 +36,50 @@ function Header() {
             ZIYA
           </h1>
         </Link>
-        <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-sm font-medium text-white hover:text-primary transition-colors"
-            >
-              {link.name}
-            </Link>
-          ))}
-        </nav>
-        <div className="flex items-center gap-2 md:hidden">
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6 text-white" />
-                <span className="sr-only">Toggle navigation menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] bg-background">
-              <SheetHeader>
-                <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
-              </SheetHeader>
-              <div className="flex flex-col h-full">
-                <nav className="flex flex-col gap-6 text-lg font-medium mt-16">
-                  {navLinks.map((link) => (
-                    <SheetClose asChild key={link.name}>
-                      <Link
-                        href={link.href}
-                        className="hover:text-primary transition-colors"
-                      >
-                        {link.name}
-                      </Link>
-                    </SheetClose>
-                  ))}
-                </nav>
-              </div>
-            </SheetContent>
-          </Sheet>
+        <div className="flex items-center gap-4">
+          <nav className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-sm font-medium text-white hover:text-primary transition-colors"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </nav>
+          <div className="text-white">
+            <ThemeToggle />
+          </div>
+          <div className="md:hidden">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6 text-white" />
+                  <span className="sr-only">Toggle navigation menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] bg-background">
+                <SheetHeader>
+                  <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                </SheetHeader>
+                <div className="flex flex-col h-full">
+                  <nav className="flex flex-col gap-6 text-lg font-medium mt-16">
+                    {navLinks.map((link) => (
+                      <SheetClose asChild key={link.name}>
+                        <Link
+                          href={link.href}
+                          className="hover:text-primary transition-colors"
+                        >
+                          {link.name}
+                        </Link>
+                      </SheetClose>
+                    ))}
+                  </nav>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
