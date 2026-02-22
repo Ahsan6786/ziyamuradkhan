@@ -72,8 +72,6 @@ const jsonLd = {
 };
 
 
-import { CustomCursor } from '@/components/ui/custom-cursor';
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -98,7 +96,6 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased" suppressHydrationWarning={true}>
-        <CustomCursor />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

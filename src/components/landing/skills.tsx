@@ -89,8 +89,8 @@ export function Skills() {
               Core Expertise
             </h3>
           </ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <StaggerContainer>
+          <StaggerContainer>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {technicalSkills.map((skill, index) => (
                 <motion.div
                   key={skill.name}
@@ -102,10 +102,10 @@ export function Skills() {
                 >
                   <SpotlightCard className="h-full">
                     <Card className="h-full bg-transparent border-none shadow-none p-6 space-y-4">
-                      <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                      <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto md:mx-0 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
                         {skill.icon}
                       </div>
-                      <div className="text-left space-y-2">
+                      <div className="text-center md:text-left space-y-2">
                         <CardTitle className="text-xl font-headline p-0">{skill.name}</CardTitle>
                         <p className="text-foreground/70 leading-snug">{skill.desc}</p>
                       </div>
@@ -113,8 +113,8 @@ export function Skills() {
                   </SpotlightCard>
                 </motion.div>
               ))}
-            </StaggerContainer>
-          </div>
+            </div>
+          </StaggerContainer>
         </div>
 
         <div className="relative group p-1 rounded-[33px] bg-gradient-to-r from-primary/20 to-transparent">

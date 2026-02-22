@@ -53,9 +53,11 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   .animate-in {
     animation-name: -custom-fade-in-down;
     animation-duration: 0.7s;
@@ -91,13 +93,6 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
-  }
-  
-  /* Hide default cursor on desktop for custom cursor experience */
-  @media (min-width: 1024px) {
-    html:not(.no-custom-cursor) * {
-      cursor: none !important;
-    }
   }
 }
 

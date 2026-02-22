@@ -66,7 +66,6 @@ export function Hero() {
         <motion.div
           initial={{ scale: 1.1, opacity: 0 }}
           animate={{ scale: 1.1, opacity: 1 }}
-          style={{ y: y2 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="md:hidden h-full w-full relative"
         >
@@ -84,9 +83,8 @@ export function Hero() {
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          style={{ y: y2 }}
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="hidden md:block absolute top-0 right-0 h-full w-1/2 overflow-hidden"
+          className="hidden md:block absolute top-0 right-10 h-full w-[40%] overflow-hidden"
         >
           <motion.div
             className="h-full w-full relative"
@@ -97,7 +95,7 @@ export function Hero() {
               src="/og-profile.png"
               alt="Ziya Murad Khan"
               fill
-              className="object-cover brightness-[0.85]"
+              className="object-contain object-bottom brightness-[0.9]"
               priority
             />
             {/* Gradient Overlay */}
@@ -176,16 +174,6 @@ export function Hero() {
         </motion.div>
       </div>
 
-      {/* Floating Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
-        className="absolute bottom-10 left-10 z-10 hidden lg:flex items-center gap-4 origin-left -rotate-90 translate-y-full"
-      >
-        <span className="text-xs uppercase tracking-[0.5em] text-white/30 font-bold whitespace-nowrap">Scroll to explore</span>
-        <div className="h-20 w-px bg-gradient-to-t from-primary/50 to-transparent" />
-      </motion.div>
     </section>
   );
 }
