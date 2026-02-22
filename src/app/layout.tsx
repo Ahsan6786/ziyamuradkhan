@@ -12,17 +12,17 @@ export const metadata: Metadata = {
   title: title,
   description: description,
   keywords: [
-    'Ziya Murad Khan', 
-    'Ziya Khan', 
-    'banking services', 
-    'telecom sales', 
-    'corporate sales', 
-    'sales leader', 
-    'RBL Bank', 
-    'IndusInd Bank', 
-    'portfolio', 
-    'best banking service provider', 
-    'strategic account management', 
+    'Ziya Murad Khan',
+    'Ziya Khan',
+    'banking services',
+    'telecom sales',
+    'corporate sales',
+    'sales leader',
+    'RBL Bank',
+    'IndusInd Bank',
+    'portfolio',
+    'best banking service provider',
+    'strategic account management',
     'team leadership'
   ],
   creator: "Ziya Murad Khan",
@@ -72,6 +72,8 @@ const jsonLd = {
 };
 
 
+import { CustomCursor } from '@/components/ui/custom-cursor';
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -95,7 +97,8 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-body antialiased">
+      <body className="font-body antialiased" suppressHydrationWarning={true}>
+        <CustomCursor />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

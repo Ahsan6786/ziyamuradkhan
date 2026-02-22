@@ -62,6 +62,43 @@
     animation-timing-function: cubic-bezier(0.21, 0.61, 0.35, 1);
     animation-fill-mode: both;
   }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.3);
+    color: hsl(var(--primary));
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.2);
+    border-radius: 20px;
+    border: 2px solid hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.4);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Hide default cursor on desktop for custom cursor experience */
+  @media (min-width: 1024px) {
+    html:not(.no-custom-cursor) * {
+      cursor: none !important;
+    }
+  }
 }
 
 @keyframes -custom-fade-in-down {
